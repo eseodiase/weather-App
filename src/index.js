@@ -1,5 +1,5 @@
 import React from 'react';
-import from 'react-dom';
+import ReactDOM from 'react-dom';
 
 import './style.css';
 
