@@ -1,13 +1,12 @@
-import React, { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import from 'react-dom';
 
-import App from './App';
+import './style.css';
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+ReactDOM.render(
+<div>
+<h1>Ese Stack</h1>
+<p>Start React 17</p>
+</div>,
+document.getElementById("root")
 );
