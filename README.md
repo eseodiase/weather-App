@@ -1,3 +1,3 @@
-# Ese Stack
+Ese Odiase Portfolio
 
-[View page ⚡️](https://react-kv5rjs.stackblitz.io)
+[View Portfolio ⚡️](https://react-kv5rjs.stackblitz.io)
