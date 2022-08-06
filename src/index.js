@@ -65,7 +65,7 @@ const Navbar = () => {
   );
 };
 ReactDOM.render(
-NavLink(),
+Navbar(),
 document.getElementById("root")
 );
 //
