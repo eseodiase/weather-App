@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
+  
   return (
     <nav
       className="navbar is-primary"
@@ -21,7 +21,7 @@ const Navbar = () => {
             className={`navbar-burger burger ${isOpen && "is-active"}`}
             aria-label="menu"
             aria-expanded="false"
-            onClick={() => setOpen(!isOpen)}
+  
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -29,7 +29,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className={`navbar-menu ${isOpen && "is-active"}`}>
+        <div className={`navbar-menu`}>
           <div className="navbar-start">
             <NavLink className="navbar-item" activeClassName="is-active" to="/">
               Home
@@ -70,11 +70,3 @@ document.getElementById("root")
 );
 //
 
-ReactDOM.render(
-<div>
-<h1>Ese Stack</h1>
-<p>Start React 17</p>
-<p>Start Now</p>
-</div>,
-document.getElementById("root")
-);
