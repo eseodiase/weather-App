@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './style.css';
 //
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
   
@@ -31,25 +30,25 @@ const Navbar = () => {
 
         <div className={`navbar-menu`}>
           <div className="navbar-start">
-            <NavLink className="navbar-item" activeClassName="is-active" to="/">
+            <Link className="navbar-item" activeClassName="is-active" to="/">
               Home
-            </NavLink>
+            </Link>
 
-            <NavLink
+            <Link
               className="navbar-item"
               activeClassName="is-active"
               to="/about"
             >
               About
-            </NavLink>
+            </Link>
 
-            <NavLink
+            <Link
               className="navbar-item"
               activeClassName="is-active"
               to="/profile"
             >
               Profile
-            </NavLink>
+            </Link>
           </div>
 
           <div className="navbar-end">
