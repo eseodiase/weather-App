@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="navbar-brand">
           <a
             role="button"
-            className={`navbar-burger burger ${isOpen && "is-active"}`}
+            className=""
             aria-label="menu"
             aria-expanded="false"
   
