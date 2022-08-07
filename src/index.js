@@ -1,71 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {Homepage, Aboutpage, Header } from './App'; //new
 
-import './style.css';
-//
-
-
-const Navbar = () => {
-  
-  return (
-    <nav
-      className="navbar is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="container">
-        <div className="navbar-brand">
-          <a
-            role="button"
-            className=""
-            aria-label="menu"
-            aria-expanded="false"
-  
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div className={`navbar-menu`}>
-          <div className="navbar-start">
-            <Link className="navbar-item" activeClassName="is-active" to="/">
-              Home
-            </Link>
-
-            <Link
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/about"
-            >
-              About
-            </Link>
-
-            <Link
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/profile"
-            >
-              Profile
-            </Link>
-          </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-white">Log in</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
 ReactDOM.render(
-Navbar(),
-document.getElementById("root")
+    <Router>
+       <Switch>
+					<Header/> //new
+		      <Route exact path="/" component={Homepage}/>
+				<Route exact path="/about" component={Aboutpage }/>
+	    </Switch>
+    </Router>,
+    document.getElementById('root')
 );
-//
-
