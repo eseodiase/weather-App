@@ -1,11 +1,15 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {Homepage, Aboutpage, Header } from './App'; //new
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
-}
+ReactDOM.render(
+    <Router>
+       <Switch>
+					<Header/> //new
+		      <Route exact path="/" component={Homepage}/>
+				<Route exact path="/about" component={Aboutpage }/>
+	    </Switch>
+    </Router>,
+    document.getElementById('root')
+);
