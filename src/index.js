@@ -81,8 +81,5 @@ inputRef.addEventListener("search", () => {
         
         </section>;
 
-    
-    ReactDOM.render(
-        weatherApp,
-        document.getElementById("root")
-        );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(weatherApp);
