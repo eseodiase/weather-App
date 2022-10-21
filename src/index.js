@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import {Homepage, Aboutpage, Header } from './App'; //new
+import ReactDOM from 'react-dom/client';
 import './App.css';
 
     const apikey = "0751b24cdf6d539e6f2bdfc798aa3f0f" 
